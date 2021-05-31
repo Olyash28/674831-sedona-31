@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body>
     <header>
-      <nav>
-        <a><img src="img/logo.svg" width="138" height="70" alt="logo"></a>
-        <ul>
+      <nav class="main-navigation">
+        <a><img src="img/logo.svg" width="138" height="70" alt="логотип Седоны"></a>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -20,107 +24,127 @@
 
     <main>
       <h1>Sedona</h1>
-      <section>
-        <img src="" height="509" width="1200" alt="красивый фон">
+      <section class="main-bg">
         <img src="img/welcom.svg" height="44" width="187" alt="Welcom">
         <img src="img/to_the_gorgeous.svg" height="29" width="256" alt="to the gorgeous">
         <img src="img/sedona_title.svg" width="458" height="214" alt="Because the grand Canyon sucks">
       </section>
-        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      <section>
-        <h2 hidden>Пять причин</h2>
-        <h3>Настоящий городок</h3>
-        <p>— №1 —</p>
-        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        <img src="img/foto_city.jpg" width="800" height="256" alt="городок">
+      <h3 class="main-text-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h3>
+      <p class="main-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <section class="reason-photo">
+        <h2 hidden>Первая из пяти причин</h2>
+        <div class="block-reason block-blue">
+          <h3>Настоящий<br> городок</h3>
+          <p>— №1 —</p>
+          <p>Седона — не аттракцион для туристов, там<br> течёт своя жизнь</p>
+        </div>
+        <img src="img/foto_city.jpg" width="800" height="256" alt="цветущие деревья, дом и горы">
       </section>
       <section>
         <h2 hidden>Преимущества</h2>
-        <ul>
+        <ul class="advantages">
           <li>
             <img src="img/icon-1.svg" width="75" height="72" alt="домик">
             <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
           </li>
           <li>
             <img src="img/icon-2.svg" height="77" width="64"  alt="бургер">
             <h3>Еда</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
           </li>
           <li>
             <img src="img/icon-3.svg" height="70" width="75"  alt="подарочек">
             <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
+            <p>Не только китайского, но и местного<br> производства!</p>
           </li>
         </ul>
       </section>
       <h2 hidden>Остальные пять причин</h2>
       <section>
-        <img src="img/bridge.jpg" width="800" height="256"  alt="мост дьявола">
-        <h3>Там есть Мост дьявола</h3>
-        <p>— №2 —</p>
-        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        <h3>Небольшая площадь</h3>
-        <p>— №3 —</p>
-        <p>Все достопримечательности находятся очень близко</p>
-        <h3>Красивая дорога</h3>
-        <p>— №4 —</p>
-        <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-        <h3>Мало туристов</h3>
-        <p>— №5 —</p>
-        <p>Большинство едет в гранд каньон и толпится там</p>
+        <img src="img/bridge.jpg" width="800" height="256"  alt="скалы, освещенные солнцем">
+        <div class="block-reason block-blue">
+          <h3>Там есть<br> Мост дьявола</h3>
+          <p>— №2 —</p>
+          <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+        </div>
+        <div class="block-reason">
+          <h3>Небольшая<br> площадь</h3>
+          <p>— №3 —</p>
+          <p>Все достопримечательности<br> находятся очень близко</p>
+        </div>
+        <div class="block-reason">
+          <h3>Красивая<br> дорога</h3>
+          <p>— №4 —</p>
+          <p>Ехать в седону из лас-вегаса совсем<br> не скучно!</p>
+        </div>
+        <div class="block-reason">
+          <h3>Мало<br> туристов</h3>
+          <p>— №5 —</p>
+          <p>Большинство едет в гранд каньон<br> и толпится там</p>
+        </div>
       </section>
-      <section>
+      <section class="hostel-search">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button type="button" class="btn btn-brown">ПОИСК ГОСТИНИЦЫ В седоне</button>
+        <form class="hostel-search-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="hostel-search-item">
             <label for="come-in">Дата заезда:</label>
-            <input type="text" id="come-in" placeholder="24 апреля 2017">
+            <input type="text" id="come-in" name="arrival" placeholder="24 апреля 2017">
+            <img src="img/calendar.svg" height="23" width="21" alt="календарик">
           </p>
-          <p>
+          <p class="hostel-search-item">
             <label for="come-out">Дата выезда:</label>
-            <input type="text" id="come-out" placeholder="4 июля 2017">
+            <input type="text" id="come-out"  name="go-away" placeholder="4 июля 2017">
+            <img src="img/calendar.svg" height="23" width="21" alt="календарик">
           </p>
-          <p>
+          <p class="hostel-search-item">
             <label for="adult">Взрослые:</label>
-            <input type="number" id="adult" name="adult">
+            <input type="number" id="adult" name="adult" placeholder="2">
           </p>
-          <p>
+          <p class="hostel-search-item">
             <label for="child">Дети:</label>
-            <input type="number" name="child" id="child">
+            <input type="number" name="child" id="child" placeholder="0">
           </p>
-          <button type="submit">Найти</button>
+          <button type="submit" class="btn btn-blue">Найти</button>
         </form>
       </section>
-      <section>
-        <img src="img/map.jpg" height="593" width="1199" alt="расположение Седоны">
-      </section>
     </main>
-    <footer>
-      <section>
+    <section>
+        <img src="img/map.jpg" height="593" width="1199" alt="расположение Седоны">
+    </section>
+
+    <footer class="main-footer">
+      <section class="contacts">
+        <h2>Контакты</h2>
         <p>#visitSEDONA</p>
         <a href="tel:+78005558628">+7 800 555-86-28</a>
       </section>
-      <section>
+      <section class="social">
+        <h2>Социальные кнопки</h2>
         <ul>
           <li>
-            <a href="#"><img src="img/twitter.svg" width="17" height="17" alt="твиттер"></a>
+            <a class="social-btn" href="#">Твиттер
+              <img src="img/twitter.svg" width="17" height="17" alt="">
+            </a>
           </li>
           <li>
-            <a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="фейсбук"></a>
+            <a class="social-btn" href="#">Фейсбук
+              <img src="img/fb-icon.svg" width="12" height="22" alt="">
+            </a>
           </li>
           <li>
-            <a href="#"><img src="img/youtube.svg" height="16" width="20" alt="ютуб"></a>
+            <a class="social-btn" href="#">Ютуб
+              <img src="img/youtube.svg" height="16" width="20" alt="">
+            </a>
           </li>
         </ul>
       </section>
-      <p>
+      <p class="footer-copyright">
         Website by
         <a href="https://htmlacademy.ru">
-          <img src="img/logo_htmlacademy.svg" width="115" height="34" alt="html academy">
+          <img src="img/logo_htmlacademy.svg" width="115" height="34" alt="логотип html academy">
         </a>
       </p>
     </footer>

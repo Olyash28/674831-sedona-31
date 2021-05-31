@@ -1,0 +1,250 @@
+:root {
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-blue: #81B3D2;
+  --middle-blue: #669EC0;
+  --dark-blue: #5496BD;
+  --grey: #EEEEEE;
+  --light-grey: #F2F2F2;
+  --middle-grey: #EBEBEB;
+  --basic-brown: #766357;
+  --middle-brown: #604E43;
+  --dark-brown: #503E33;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url("../fonts/PTSans.woff2") format("woff2"),
+    url("../fonts/PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url("../fonts/PTSans-Bold.woff2") format("woff2"),
+    url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  min-width: 1220px;
+  background-color: var(--basic-white);
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+/*header*/
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  text-decoration: none;
+  color: var(--basic-black);
+  font-weight: bold;
+}
+
+.site-navigation a:hover {
+  color: var(--basic-blue);
+}
+
+.site-navigation a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation a:active {
+  color: var(--basic-brown);
+}
+
+/*main*/
+
+.main-bg {
+  background-image:
+    url("../img/bg_bottom.svg"),
+    url("../img/background_main.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom, center;
+  background-size: contain, cover;
+  padding-top: 76px;
+  width: auto;
+  height: 509px;
+
+}
+
+.main-bg img {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.main-text,
+.main-text-title {
+  text-align: center;
+  line-height: 26px;
+}
+
+.main-text-title {
+  margin-top: 42px;
+}
+
+.main-text {
+  margin-bottom: 51px;
+}
+
+.block-reason {
+  width: 400px;
+  /*height: 256px;*/
+  background-color: var(--grey);
+  text-align: center;
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
+
+.block-blue {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.reason-photo {
+  width: auto;
+}
+/*преимущества*/
+
+.advantages li {
+  list-style: none;
+  text-align: center;
+  padding-top: 64px;
+  width: 400px;
+  margin: 0;
+}
+
+/*form*/
+
+.hostel-search {
+  font: inherit;
+  text-align: center;
+  padding-top: 58px;
+}
+
+/*непонятно что с размерами*/
+.hostel-search h2{
+  font-size: 30px;
+}
+
+.hostel-search p {
+  line-height: 24px;
+}
+
+.btn {
+  color: var(--basic-white);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+}
+
+.btn-brown {
+  background-color: var(--basic-brown);
+}
+
+.btn-brown:hover {
+  background-color: var(--middle-brown);
+}
+
+.btn-brown:focus {
+  background-color: var(--dark-brown);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-blue {
+  background-color: var(--basic-blue);
+}
+
+.btn-blue:hover {
+  background-color: var(--middle-blue);
+}
+
+.btn-blue:focus {
+  background-color: var(--dark-blue);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hostel-search-form {
+}
+
+.hostel-search-item {
+  font-weight: bold;
+}
+
+.hostel-search-item input {
+  font: inherit;
+  text-transform: inherit;
+  background-color: var(--light-grey);
+  border: none;
+}
+
+.hostel-search-item input:hover {
+  background-color: var(--middle-grey);
+}
+
+.hostel-search-item input:focus {
+  background-color: var(--basic-white);
+  border: 2px solid #E5E5E5;
+}
+
+/*catalog*/
+
+.stars {
+  width: 110px;
+  height: 27px;
+}
+
+/*footer*/
+
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.contacts {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.social ul {
+  list-style: none;
+}
+
+.social-btn {
+  text-decoration: none;
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-blue);
+  text-align: center;
+}
+
+.social-btn:hover {
+  background-color: var(--middle-blue);
+}
+
+

@@ -84,7 +84,7 @@ img {
     url("../img/bg_bottom.svg"),
     url("../img/background_main.jpg");
   background-repeat: no-repeat;
-  background-position: bottom, center;
+  background-position: 0 101%, center;
   background-size: contain, cover;
   padding-top: 76px;
   padding-bottom: 90px;
@@ -289,6 +289,8 @@ img {
   color: var(--basic-brown);
 }
 
+/*filters*/
+
 .filters {
   background: url("../img/background_catalog.jpg") no-repeat;
   background-size: cover;
@@ -306,7 +308,7 @@ img {
 }
 
 .filter-form fieldset {
-  /*border: none;*/
+  border: none;
 }
 
 .filter-form legend {
@@ -314,40 +316,75 @@ img {
   font-weight: bold;
 }
 
+.filter-form-btn {
+  background-color: transparent;
+  font: inherit;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  outline: none;
+  border: 2px solid var(--basic-white);
+}
+
+.filter-form-btn:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+/*sort*/
+
 .sort h2 {
   font-size: 21px;
   line-height: 26px;
 }
 
-.sort ul {
+.sort-points {
   list-style: none;
   font-size: 12px;
   line-height: 18px;
 }
-.sort li {
+.sort-points li {
   color: var(--black-opacity);
   border-bottom: 1px dotted var(--basic-blue);
+  width: auto;
 }
 
-.sort li:hover {
+.sort-points li:hover {
   color: var(--middle-blue);
   border-bottom: 1px dotted var(--basic-blue);
 }
 
-.sort li:focus {
+.sort-points li:focus {
   color: var(--basic-blue);
 }
 
-.sort li:active {
+.sort-points li:active {
   color: var(--basic-black);
+}
+
+.up-btn svg,
+.down-btn svg {
+  fill: var(--grey-svg);
+}
+
+.up-btn svg:hover,
+.down-btn svg:hover {
+  fill: var(--basic-black);
+}
+
+.up-btn,
+.down-btn {
+  text-decoration: none;
+}
+
+.up-btn svg:focus,
+.down-btn svg:focus,
+.up-btn svg:active,
+.down-btn svg:active {
+  fill: var(--basic-blue);
 }
 
 /*hotels*/
 
-.stars {
-  width: 110px;
-  height: 27px;
-}
 
 .choice ul {
   list-style: none;
@@ -355,16 +392,27 @@ img {
 }
 
 .choice-hotel {
-  /*border-top: 1px solid var(--black-opacity);*/
-}
-
-.choice-hotel h3 {
-  font-size: 21px;
-  line-height: 26px;
+  border-top: 1px solid var(--black-opacity);
 }
 
 .choice-hotel:last-child {
   border-bottom: 1px solid var(--black-opacity);
+}
+
+.choice-hotel-title {
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  color: var(--basic-black);
+  font-weight: bold;
+}
+
+.choice-hotel-title:hover {
+  color: var(--basic-blue);
+}
+
+.choice-hotel-title:active {
+  color: var(--black-opacity);
 }
 
 .btn-small {

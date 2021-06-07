@@ -36,6 +36,11 @@
   font-style: normal;
 }
 
+html {
+  background-color: var(--grey);
+  height: 100%;
+}
+
 body {
   min-width: 1200px;
   background-color: var(--basic-white);
@@ -45,7 +50,12 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  margin: 0 40px;
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 img {
@@ -55,8 +65,16 @@ img {
 
 /*header*/
 
+
+.main-navigation {
+  margin: 0 72px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
 .site-navigation {
   list-style: none;
+  margin: 0;
 }
 
 .site-navigation a {
@@ -106,12 +124,37 @@ img {
   margin-bottom: 51px;
 }
 
+.reason-photo {
+  width: 1200px;
+}
+
+.reason-photo-one {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.reason-photo-two {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
 .block-reason {
-  width: 400px;
   background-color: var(--grey);
   text-align: center;
   padding-top: 47px;
-  padding-bottom: 54px;
+  /*padding-bottom: 54px;*/
+}
+
+.block-reason h3 {
+  margin: 0;
+  padding-bottom: 25px;
+}
+.number {
+  padding-bottom: 23px;
+}
+
+.block-reason p {
+  margin: 0;
 }
 
 .block-blue {
@@ -119,16 +162,28 @@ img {
   color: var(--basic-white);
 }
 
-.reason-photo {
-  width: auto;
+.reason-not-photo {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  min-height: 256px;
 }
 
 /*advantages*/
 
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
 .advantages li {
   list-style: none;
   text-align: center;
+  vertical-align: middle;
   padding-top: 64px;
+  padding-bottom: 81px;
   width: 400px;
   margin: 0;
 }
@@ -221,6 +276,20 @@ img {
 
 .main-footer {
   background-color: var(--bg-footer);
+  margin-top: 23px;
+  margin-bottom: 36px;
+}
+.main-footer p {
+  margin: 0;
+}
+.main-footer-box {
+  margin: 0 72px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-box {
+  text-align: center;
 }
 
 .contacts {
@@ -236,6 +305,7 @@ img {
 
 .social ul {
   list-style: none;
+  margin: 0;
 }
 
 .social-btn {

@@ -36,19 +36,16 @@
             <legend>Инфраструктура:</legend>
               <ul>
                 <li class="filter-option">
-                  <label>
-                    <input class="filter-input visually-hidden" type="checkbox" checked> Бассейн
-                  </label>
+                  <input class="filter-input visually-hidden" id="pool" type="checkbox" name="pool" checked>
+                  <label for="pool">Бассейн</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="filter-input visually-hidden" type="checkbox"> Парковка
-                  </label>
+                  <input class="filter-input visually-hidden" name="parking" id="parking" type="checkbox">
+                  <label for="parking">Парковка</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="filter-input visually-hidden" type="checkbox"> Wi-Fi
-                  </label>
+                    <input class="filter-input visually-hidden" name="wifi" id="wifi" type="checkbox">
+                    <label for="wifi">Wi-Fi</label>
                 </li>
               </ul>
           </fieldset>
@@ -56,30 +53,44 @@
             <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input class="filter-input visually-hidden" type="checkbox" checked> Гостиница
-                </label>
+                <input class="filter-input visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="filter-input visually-hidden" type="checkbox" checked> Мотель
-                </label>
+                <input class="filter-input visually-hidden" type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">Мотель</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="filter-input visually-hidden" type="checkbox" checked> Апартаменты
-                </label>
+                <input class="filter-input visually-hidden" type="checkbox" name="apartments" id="apart"
+                       checked>
+                <label for="apart">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки, ₽:</legend>
-              <p>от 0 до 3000</p>
-            <br>
-              <label>
-                <input type="range" min="0" max="3000">
-              </label>
-            <button class="filter-form-btn" type="submit" name="show">Показать</button>
+            <div class="range-filter">
+              <div class="price-controls">
+                <label class="price">
+                  <span>от </span>
+                  <input type="number" name="min-price" value="0">
+                </label>
+                <label class="price">
+                  <span>до </span>
+                  <input type="number" name="max-price" value="3000">
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+            </div>
+            <button class="filter-form-btn" type="submit" name="show">
+              Показать
+            </button>
           </fieldset>
         </form>
       </section>
@@ -170,7 +181,7 @@
 
     <footer class="main-footer">
 
-      <div class="main-footer-box">
+      <div class="footer-container">
         <div class="contacts footer-box">
           <p>#visitSEDONA</p>
           <a href="tel:+78005558628">+7 800 555-86-28</a>

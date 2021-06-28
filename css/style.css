@@ -682,6 +682,7 @@ img {
   text-align: center;
   justify-content: center;
   grid-template-columns: 50% 50%;
+  gap: 3px;
 }
 
 .price span {
@@ -738,6 +739,7 @@ img {
   position: absolute;
   top: -9px;
   left: 0;
+  box-sizing: content-box;
 }
 
 .toggle-min {
@@ -745,7 +747,7 @@ img {
 }
 
 .toggle-max {
-  left: 240px;
+  left: 250px;
 }
 
 .toggle:hover {
@@ -786,7 +788,6 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 34px;
 }
 
 .sort-btn {
@@ -800,6 +801,7 @@ img {
   text-decoration-style: dotted;
   text-decoration-color: var(--basic-blue);
   text-underline-offset: 3px;
+  margin-right: 34px;
 }
 
 .sort-points .sort-points-current {
@@ -842,7 +844,7 @@ img {
 }
 
 .up-btn {
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 .up-btn svg:focus,
@@ -864,13 +866,14 @@ img {
 
 .choice-hotel {
   border-top: 1px solid var(--grey-border-form);
-  padding: 30px 72px;
+  padding: 27px 72px;
+  padding-bottom: 32px;
   display: grid;
   grid-template-columns: 135px 1fr auto;
   gap: 30px;
 }
 
-.choice-hotel + img {
+.choice-hotel > img {
   width: 135px;
   height: 90px;
   background-color: var(--basic-white);
@@ -906,7 +909,6 @@ img {
 
 .choice-hotel-info {
   display: flex;
-  gap: 6px;
 }
 
 .choice-hotel-info p {
@@ -914,11 +916,11 @@ img {
   margin: 0;
   width: 110px;
   overflow: hidden;
+  margin-right: 6px;
 }
 
 .choice-hotel-btn {
   display: flex;
-  gap: 6px;
 }
 
 .btn-small {
@@ -935,6 +937,7 @@ img {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin-right: 6px;
 }
 
 .btn-small-blue {

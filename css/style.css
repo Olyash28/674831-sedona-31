@@ -461,6 +461,7 @@ img {
 
 .map-footer {
   margin-top: -125px;
+  z-index: 1;
 }
 
 .main-footer p {

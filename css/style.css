@@ -302,6 +302,7 @@ img {
   border: none;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .btn-brown {
@@ -326,11 +327,14 @@ img {
   width: 568px;
 }
 
+.hotel-search-form-hide {
+  display: none;
+}
+
 .hotel-search-form .hotel-search-item {
   width: 100%;
   position: relative;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 29px;
 }
 
@@ -346,16 +350,11 @@ img {
 
 .hotel-search-item label {
   align-self: center;
+  flex: 112px 0 0;
 }
 
-.date-input {
-  width: 346px;
-}
-
-.hotel-search-item .number-input {
-  width: 114px;
-  text-align: center;
-  padding: 6px 39px;
+.hotel-search-item .date-input {
+  flex-grow: 1;
 }
 
 .calendar {
@@ -363,6 +362,7 @@ img {
   top: 7px;
   right: 9px;
   fill: var(--grey-svg);
+  cursor: pointer;
 }
 
 .calendar:hover {
@@ -371,6 +371,42 @@ img {
 
 .calendar:active {
   fill: var(--basic-blue);
+}
+
+.hotel-search-item .number-input {
+  width: 38px;
+  text-align: center;
+  padding: 0;
+}
+
+.tourists {
+  display: flex;
+}
+
+.tourists:first-child {
+  margin-right: 94px;
+}
+
+.tourists:last-child label {
+  flex: 65px 0 0;
+}
+
+.tourists-number {
+  background-color: var(--light-grey);
+  width: 114px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-min {
+  height: 38px;
+  width: 38px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-blue {
@@ -384,7 +420,7 @@ img {
   background-color: var(--middle-brown);
 }
 
-.btn-brown:focus {
+.btn-brown:active {
   background-color: var(--dark-brown);
   color: var(--white-opacity);
 }
@@ -393,7 +429,7 @@ img {
   background-color: var(--middle-blue);
 }
 
-.btn-blue:focus {
+.btn-blue:active {
   background-color: var(--dark-blue);
   color: var(--white-opacity);
 }
@@ -409,45 +445,15 @@ img {
   border: 2px solid var(--grey-border-form);
 }
 
-.search-number-input {
-  position: relative;
+.btn-min svg {
+  fill: var(--grey-svg);
 }
 
-.btn-min {
-  position: absolute;
-  height: 38px;
-  width: 38px;
-  border: none;
-  background-color: transparent;
-}
+.btn-min:hover svg {
+   fill: var(--basic-black);
+ }
 
-.adult-minus {
-  top: -3px;
-  left:113px;
-}
-
-.adult-plus {
-  top: 0;
-  left: 188px;
-}
-
-.child-minus {
-  top: -3px;
-  right: 73px;
-}
-
-.child-plus {
-  top: 0;
-  right: 0;
-}
-
-.minus:hover rect,
-.plus:hover path{
-  fill: var(--basic-black);
-}
-
-.minus:active rect,
-.plus:active path {
+.btn-min:active svg {
   fill: var(--basic-blue)
 }
 
@@ -520,15 +526,11 @@ img {
   background-color: var(--middle-blue);
 }
 
-.social-btn:focus {
-  background-color: var(--dark-blue);
-}
-
 .social-btn svg {
   fill: var(--basic-white);
 }
 
-.social-btn svg:active {
+.social-btn:active svg {
   fill: var(--white-opacity);
 }
 

@@ -836,13 +836,13 @@ img {
   color: var(--basic-black);
 }
 
-.sort-btn .sort-btn-current svg {
-  fill: var(--basic-blue);
-}
-
 .up-btn svg,
 .down-btn svg {
   fill: var(--grey-svg);
+}
+
+.sort-btn-current svg {
+  fill: var(--basic-blue);
 }
 
 .up-btn svg:hover,
